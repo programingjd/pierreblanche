@@ -12,15 +12,15 @@ body{width:vw;height:vh;width:100dvw;height:100dvh}
 body{display:grid;grid-template-rows:1fr 1fr;grid-template-columns:1fr}
 @media(orientation:landscape){
   body{grid-template-columns:1fr 1fr;grid-template-rows:1fr}
-  img{object-fit:cover;width:50%;height:100%}
 }
-a{display:contents}
-img{object-fit:cover;width:100%;height:50%}
+a{display:block;background:center no-repeat;background-size:cover}
+a:first-child{background-image:url(2023/left_thumb.avif)}
+a:last-child  {background-image:url(2023/right_thumb.avif)}
 a:not(:hover) img{opacity:.9}
 </style>
 </head>
 <body>
-<a href="2023/left"><img src="2023/left_thumb.avif" alt="partie gauche"></a>
-<a href="2023/right"><img src="2023/right_thumb.avif" alt="partie droite"></a>
+<a href="2023/left"></a>
+<a href="2023/right"></a>
 </body>
 </html>

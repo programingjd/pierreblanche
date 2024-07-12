@@ -34,7 +34,7 @@ dt{font-weight:700}
 const json=await(await fetch('./routes.json')).json();
 const colors=new Map(json.colors.map(it=>[it.code,Object.assign({routes:[]},it)]));
 const routes=[];
-Object.entries(json.routes).forEach(([id,grade])=>{
+Object.entries(json.routes??json.grades).forEach(([id,grade])=>{
   const color=colors.get(id.charAt(0));
   const route={id,grade};
   color.routes.push(route);

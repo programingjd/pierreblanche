@@ -1,0 +1,131 @@
+{
+  "colors": [
+    {
+      "fr": "violet",
+      "en": "purple",
+      "code": "V",
+      "rgb": "#a14c78",
+      "dark": true
+    },
+    {
+      "fr": "bleu",
+      "en": "blue",
+      "code": "B",
+      "rgb": "#1559c5",
+      "dark": true
+    },
+    {
+      "fr": "vert",
+      "en": "green",
+      "code": "G",
+      "rgb": "#75a559",
+      "dark": true
+    },
+    {
+      "fr": "orange",
+      "en": "orange",
+      "code": "O",
+      "rgb": "#e67e2c",
+      "dark": true
+    },
+    {
+      "fr": "rouge",
+      "en": "red",
+      "code": "R",
+      "rgb": "#c12917",
+      "dark": true
+    },
+    {
+      "fr": "noir",
+      "en": "black",
+      "code": "D",
+      "rgb": "#000",
+      "dark": true
+    },
+    {
+      "fr": "gris",
+      "en": "gray",
+      "code": "M",
+      "rgb": "#666",
+      "dark": true
+    },
+    {
+      "fr": "rose",
+      "en": "pink",
+      "code": "P",
+      "rgb": "#dc5094",
+      "dark": true
+    },
+    {
+      "fr": "jaune",
+      "en": "yellow",
+      "code": "Y",
+      "rgb": "#fcd977",
+      "dark": false
+    },
+    {
+      "fr": "blanc",
+      "en": "white",
+      "code": "W",
+      "rgb": "#eee",
+      "dark": false
+    },
+    {
+      "fr": "cyan",
+      "en": "cyan",
+      "code": "T",
+      "rgb": "#5ffbfd",
+      "dark": false
+    },
+    {
+      "fr": "saumon",
+      "en": "salmon",
+      "code": "S",
+      "rgb": "#fa8072",
+      "dark": false
+    },
+    {
+      "fr": "tout",
+      "en": "all",
+      "code": "A",
+      "dark": true
+    }
+  ],
+  "routes": {
+    "1Y": "5b+",
+    "1B": "6a+",
+    "1R": "4c",
+    "1A": "3a",
+    "2G": "5c",
+    "2D": "6a",
+    "2V": "6a+",
+    "2A": "4b",
+    "3Y": "4c",
+    "3B": "4b",
+    "3R": "5a",
+    "3A": "3b+",
+    "4A": "2c",
+    "5V": "6a",
+    "5O": "5c",
+    "5D": "4b",
+    "5A": "3a",
+    "6B": "5c",
+    "6Y": "5c",
+    "6R": "4b+",
+    "6A": "3b",
+    "7G": "4b+",
+    "7O": "5c",
+    "7D": "6a",
+    "7A": "3c",
+    "8W": null,
+    "8Y": null,
+    "8B": null,
+    "8O": null,
+    "8A": "3b",
+    "9R": null,
+    "9D": "6a+",
+    "9G": "5b",
+    "9A": null,
+    "10S": "5a"
+  }
+}

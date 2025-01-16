@@ -26,6 +26,7 @@ dt{font-weight:700}
 .routes{display:flex;flex-wrap:wrap;gap:.5em 1em;flex:1}
 .route{padding:.25em .5em;color:var(--fg);border:.025em solid var(--fg);width:6ch;text-align:center}
 .grade>:first-child{width:6ch}
+dd>a,.route>a{color:inherit;text-decoration:underline}
 </style>
 </head>
 <body>
@@ -35,6 +36,7 @@ dt{font-weight:700}
 <script type="module">
 const json=await(await fetch('./routes.json')).json();
 const colors=new Map(json.colors.map(it=>[it.code,Object.assign({routes:[]},it)]));
+const videos=new Set(json.videos);
 const routes=[];
 Object.entries(json.routes??json.grades).forEach(([id,grade])=>{
   const color=colors.get(id.charAt(0));
@@ -74,7 +76,14 @@ colors.forEach(color=>{
     const label=document.createElement('dt');
     label.textContent=route.id;
     const value=document.createElement('dd');
-    value.textContent=route.grade||'';
+    if(videos.has(route.id)){
+      const a=document.createElement('a');
+      a.href=`./${route.id}.mp4`;
+      a.textContent=route.grade||'?';
+      value.appendChild(a);
+    }else{
+      value.textContent=route.grade||'?';
+    }
     el.appendChild(label);
     el.appendChild(value);
   });
@@ -91,7 +100,14 @@ grades.forEach(([grade,routes])=>{
   routes.forEach(route=>{
     const it=document.createElement('div');
     it.classList.add('route');
-    it.textContent=route.id;
+    if(videos.has(route.id)){
+      const a=document.createElement('a');
+      a.href=`/${route.id}.mp4`;
+      a.textContent=route.id;
+      it.appendChild(a);
+    }else{
+      it.textContent=route.id;
+    }
     const color=colors.get(route.id.charAt(0));
     it.style.backgroundColor=color.rgb;
     it.style.setProperty('--fg',color.dark?'#fff':'#000');

@@ -1,0 +1,84 @@
+{
+  "colors": [
+    {
+      "fr": "violet",
+      "en": "purple",
+      "code": "V",
+      "rgb": "#a14c78",
+      "dark": true
+    },
+    {
+      "fr": "bleu",
+      "en": "blue",
+      "code": "B",
+      "rgb": "#1559c5",
+      "dark": true
+    },
+    {
+      "fr": "vert",
+      "en": "green",
+      "code": "G",
+      "rgb": "#75a559",
+      "dark": true
+    },
+    {
+      "fr": "orange",
+      "en": "orange",
+      "code": "O",
+      "rgb": "#e67e2c",
+      "dark": true
+    },
+    {
+      "fr": "rouge",
+      "en": "red",
+      "code": "R",
+      "rgb": "#c12917",
+      "dark": true
+    },
+    {
+      "fr": "noir",
+      "en": "black",
+      "code": "N",
+      "rgb": "#000",
+      "dark": true
+    },
+    {
+      "fr": "gris",
+      "en": "gray",
+      "code": "D",
+      "rgb": "#666",
+      "dark": true
+    },
+    {
+      "fr": "rose",
+      "en": "pink",
+      "code": "P",
+      "rgb": "#dc5094",
+      "dark": true
+    },
+    {
+      "fr": "jaune",
+      "en": "yellow",
+      "code": "Y",
+      "rgb": "#fcd977",
+      "dark": false
+    },
+    {
+      "fr": "blanc",
+      "en": "white",
+      "code": "W",
+      "rgb": "#eee",
+      "dark": false
+    },
+    {
+      "fr": "saumon",
+      "en": "salmon",
+      "code": "S",
+      "rgb": "#ffb19a",
+      "dark": false
+    }
+  ],
+  "routes": {
+  },
+  "videos": []
+}

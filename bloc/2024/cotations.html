@@ -35,6 +35,7 @@ dd>a,.route>a{color:inherit;text-decoration:underline}
 </body>
 <script type="module">
 const json=await(await fetch('./routes.json')).json();
+const idComparator=await import('../sort.mjs');
 const colors=new Map(json.colors.map(it=>[it.code,Object.assign({routes:[]},it)]));
 const videos=new Set(json.videos);
 const routes=[];
@@ -44,11 +45,7 @@ Object.entries(json.routes??json.grades).forEach(([id,grade])=>{
   color.routes.push(route);
   routes.push(route);
 });
-colors.forEach(it=>it.routes.sort((a,b)=>{
-  if(a.id<b.id) return -1;
-  if(a.id>b.id) return 1;
-  return 0;
-}));
+colors.forEach(it=>it.routes.sort(idComparator);
 const sorted=routes.filter(it=>it.grade);
 sorted.sort((a,b)=>{
   if((a.grade??"")<(b.grade??"")) return -1;

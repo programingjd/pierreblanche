@@ -11,3 +11,4 @@ const routeNumberComparator=(a,b)=>{
   return comparator(a,b);
 };
 export default routeNumberComparator;
+export {comparator};

@@ -99,7 +99,7 @@ grades.forEach(([grade,routes])=>{
     it.classList.add('route');
     if(videos.has(route.id)){
       const a=document.createElement('a');
-      a.href=`/${route.id}.mp4`;
+      a.href=`./${route.id}.mp4`;
       a.textContent=route.id;
       it.appendChild(a);
     }else{

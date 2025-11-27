@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no" class="notranslate">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google" content="notranslate">
+<title>Bonus Bloc Pierre Blanche saison 2025/2026</title>
+<link rel="stylesheet" href="bonus.css">
+</head>
+<body>
+<div class="gallery" id="gallery"></div>
+
+<!-- Modal pour afficher l'image en grand -->
+<div id="modal" class="modal">
+<span class="close">&times;</span>
+<img class="modal-content" id="modal-img">
+</div>
+
+</body>
+<script type="module">
+const gallery = document.getElementById('gallery');
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modal-img');
+const closeBtn = document.getElementsByClassName('close')[0];
+
+// Liste d'images (remplace par tes fichiers)
+const images = [
+    'bonus/1.png', 
+];
+
+// Ajouter les images à la galerie
+images.forEach(src => {
+  const img = document.createElement('img');
+  img.src = src;
+  img.alt = "Image de la galerie";
+  
+  // Au clic, ouvrir le modal
+  img.addEventListener('click', () => {
+    modal.style.display = "flex";
+    modalImg.src = src;
+  });
+
+  gallery.appendChild(img);
+});
+
+// Fermer le modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Fermer si clic en dehors de l'image
+modal.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</html>
+
+
